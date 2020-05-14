@@ -56,11 +56,10 @@ MinimumAcceptedPOW = 2e-01
 RestrictConnectionBetweenLightClients = true
 
 [Node]
-UserIdent = "DuckChain_BootNode"
-DataDir = "/home/simon/github/DuckChaindata/DuckChain_BootNode"
+UserIdent = "DuckChain_PrivateNode01"
+DataDir = "/home/simon/github/DuckChain/data/DuckChain_PrivateNode01"
 omitempty = ""
 IPCPath = "geth.ipc"
-HTTPHost = "127.0.0.1"
 HTTPPort = 8545
 HTTPVirtualHosts = ["localhost"]
 HTTPModules = ["net", "web3", "eth"]
@@ -71,12 +70,12 @@ GraphQLVirtualHosts = ["localhost"]
 
 [Node.P2P]
 MaxPeers = 50
-NoDiscovery = false
+NoDiscovery = true
 BootstrapNodes = []
 BootstrapNodesV5 = []
-StaticNodes = ["enode://c15750f17b0754dafb2bd58f5be733bcebabc140dd563b875339b3c0848b421b4e652f311c5544275dc7a28dc3e779f98d9182ea463af0cf90f728b9e60ac5d0@82.64.158.44:30304?discport=0", "enode://d3899c199eb21cd16a3a7c306cf578b6f163813c70a06b729b3a7532bcbd9fc5d5a15d8316734c9a6be302d8947a9f5c1ee03dc3966e1ec940d26c400b05b38a@127.0.0.1:30305", "enode://63a307e867871e987afc4b4fe491a907e7581df0d1fa030900c5e728e239361b5f705094ee6b392152ab81f7ea7f1e74b5c0b70d58322670364cd0393b86bfd8@82.64.158.44:30303?discport=0"]
-TrustedNodes = ["enode://c15750f17b0754dafb2bd58f5be733bcebabc140dd563b875339b3c0848b421b4e652f311c5544275dc7a28dc3e779f98d9182ea463af0cf90f728b9e60ac5d0@82.64.158.44:30304?discport=0", "enode://d3899c199eb21cd16a3a7c306cf578b6f163813c70a06b729b3a7532bcbd9fc5d5a15d8316734c9a6be302d8947a9f5c1ee03dc3966e1ec940d26c400b05b38a@127.0.0.1:30305", "enode://63a307e867871e987afc4b4fe491a907e7581df0d1fa030900c5e728e239361b5f705094ee6b392152ab81f7ea7f1e74b5c0b70d58322670364cd0393b86bfd8@82.64.158.44:30303?discport=0""]
-ListenAddr = ":30303"
+StaticNodes = ["enode://5ae0f7602e27adb14e3030c08c63127ad38f4e485e77c7521295455ae2066cf1ba903e7b5ba4423f12a20fb50454a3a2efad25519fa9ffc270fac63425926401@82.64.158.44:30303"]
+TrustedNodes = ["enode://5ae0f7602e27adb14e3030c08c63127ad38f4e485e77c7521295455ae2066cf1ba903e7b5ba4423f12a20fb50454a3a2efad25519fa9ffc270fac63425926401@82.64.158.44:30303"]
+ListenAddr = ":30304"
 EnableMsgEvents = false
 
 [Node.HTTPTimeouts]
@@ -85,4 +84,4 @@ WriteTimeout = 30000000000
 IdleTimeout = 120000000000
 
 [Ethstats]
-URL = "DuckChain_BootNode:12345@192.168.0.250:3000"
+URL = "DuckChain_PrivateNode01:12345@192.168.0.250:3000"
