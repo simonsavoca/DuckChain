@@ -1,0 +1,85 @@
+[Eth]
+NetworkId = 9999
+SyncMode = "full"
+DiscoveryURLs = []
+NoPruning = false
+NoPrefetch = false
+LightPeers = 100
+UltraLightFraction = 75
+DatabaseCache = 512
+DatabaseFreezer = ""
+TrieCleanCache = 256
+TrieDirtyCache = 256
+TrieTimeout = 3600000000000
+EnablePreimageRecording = false
+EWASMInterpreter = ""
+EVMInterpreter = ""
+
+[Eth.Miner]
+GasFloor = 8000000
+GasCeil = 8000000
+GasPrice = 1000000000
+Recommit = 3000000000
+Noverify = false
+
+[Eth.Ethash]
+CacheDir = "ethash"
+CachesInMem = 2
+CachesOnDisk = 3
+CachesLockMmap = false
+DatasetDir = "/home/simon/.ethash"
+DatasetsInMem = 1
+DatasetsOnDisk = 2
+DatasetsLockMmap = false
+PowMode = 0
+
+[Eth.TxPool]
+Locals = []
+NoLocals = false
+Journal = "transactions.rlp"
+Rejournal = 3600000000000
+PriceLimit = 1
+PriceBump = 10
+AccountSlots = 16
+GlobalSlots = 4096
+AccountQueue = 64
+GlobalQueue = 1024
+Lifetime = 10800000000000
+
+[Eth.GPO]
+Blocks = 20
+Percentile = 60
+
+[Shh]
+MaxMessageSize = 1048576
+MinimumAcceptedPOW = 2e-01
+RestrictConnectionBetweenLightClients = true
+
+[Node]
+UserIdent = "DuckChain_BootNode"
+DataDir = "/home/simon/private-ethereum/data/DuckChain_BootNode"
+omitempty = ""
+IPCPath = "geth.ipc"
+HTTPHost = "127.0.0.1"
+HTTPPort = 8545
+HTTPVirtualHosts = ["localhost"]
+HTTPModules = ["net", "web3", "eth"]
+WSPort = 8546
+WSModules = ["net", "web3", "eth"]
+GraphQLPort = 8547
+GraphQLVirtualHosts = ["localhost"]
+
+[Node.P2P]
+MaxPeers = 50
+NoDiscovery = false
+BootstrapNodes = []
+BootstrapNodesV5 = []
+StaticNodes = ["enode://c15750f17b0754dafb2bd58f5be733bcebabc140dd563b875339b3c0848b421b4e652f311c5544275dc7a28dc3e779f98d9182ea463af0cf90f728b9e60ac5d0@82.64.158.44:30304?discport=0", "enode://d3899c199eb21cd16a3a7c306cf578b6f163813c70a06b729b3a7532bcbd9fc5d5a15d8316734c9a6be302d8947a9f5c1ee03dc3966e1ec940d26c400b05b38a@127.0.0.1:30305"]
+TrustedNodes = ["enode://c15750f17b0754dafb2bd58f5be733bcebabc140dd563b875339b3c0848b421b4e652f311c5544275dc7a28dc3e779f98d9182ea463af0cf90f728b9e60ac5d0@82.64.158.44:30304?discport=0", "enode://d3899c199eb21cd16a3a7c306cf578b6f163813c70a06b729b3a7532bcbd9fc5d5a15d8316734c9a6be302d8947a9f5c1ee03dc3966e1ec940d26c400b05b38a@127.0.0.1:30305"]
+ListenAddr = ":30303"
+EnableMsgEvents = false
+
+[Node.HTTPTimeouts]
+ReadTimeout = 30000000000
+WriteTimeout = 30000000000
+IdleTimeout = 120000000000
