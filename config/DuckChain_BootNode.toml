@@ -83,3 +83,6 @@ EnableMsgEvents = false
 ReadTimeout = 30000000000
 WriteTimeout = 30000000000
 IdleTimeout = 120000000000
+
+[Ethstats]
+URL = "DuckChain_BootNode:12345@192.168.0.250:3000"
