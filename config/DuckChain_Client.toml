@@ -57,7 +57,7 @@ RestrictConnectionBetweenLightClients = true
 
 [Node]
 UserIdent = "DuckChain_Client"
-DataDir = "//home/simon/github/DuckChain/data/DuckChain_Client"
+DataDir = "/home/simon/DuckChain/data/DuckChain_Client"
 omitempty = ""
 IPCPath = "geth.ipc"
 HTTPPort = 8545
@@ -71,7 +71,7 @@ GraphQLVirtualHosts = ["localhost"]
 [Node.P2P]
 MaxPeers = 50
 NoDiscovery = false
-BootstrapNodes = ["enode://bbeceb33d820cfcc5a27d0601a5a885fa97c5e9f60c94ed9d865465fb8226ef3c027361e0d319bcff722e3af1b48ccbeaedf0315701c0bf5b3730c061b0a3a42@82.64.158.44:30303"]
+BootstrapNodes = ["enode://4cb93c54e4678f853fab060154f8646622b301488d8083d20e839655c8d3f820f8e2e7f866df67e6d5ef1f71167a2c1a7cc73ba1d9b39c63822ed7a693fa666f@82.64.158.44:30303"]
 BootstrapNodesV5 = []
 StaticNodes = []
 TrustedNodes = []

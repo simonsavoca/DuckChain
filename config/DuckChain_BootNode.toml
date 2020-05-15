@@ -57,7 +57,7 @@ RestrictConnectionBetweenLightClients = true
 
 [Node]
 UserIdent = "DuckChain_BootNode"
-DataDir = "/home/simon/github/DuckChain/data/DuckChain_BootNode"
+DataDir = "/home/simon/DuckChain/data/DuckChain_BootNode"
 omitempty = ""
 IPCPath = "geth.ipc"
 HTTPHost = "127.0.0.1"

@@ -3,7 +3,7 @@ Description=DuckChain - BootNode
 After=syslog.target network.target
 
 [Service]
-ExecStart=/usr/bin/geth --config /home/simon/github/DuckChain/config/DuckChain_BootNode.toml
+ExecStart=/usr/bin/geth --config /home/simon/DuckChain/config/DuckChain_BootNode.toml
 Restart=on-failure
 KillSignal=SIGINT
 
