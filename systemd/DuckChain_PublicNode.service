@@ -3,7 +3,7 @@ Description=DuckChain - PublicNode01
 After=syslog.target network.target
 
 [Service]
-ExecStart=/usr/bin/geth --config /home/simon/DuckChain/config/DuckChain_PublicNode01.toml
+ExecStart=/usr/bin/geth --config /home/simon/DuckChain/config/geth/DuckChain_PublicNode01.toml
 Restart=on-failure
 KillSignal=SIGINT
 
