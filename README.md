@@ -38,6 +38,12 @@ sudo apt-get install ethereum
 
 geth --datadir /.../.....  account new
 
+- One for Faucet service and give free ethers
+- One personnal, my precious !
+- One for Central Bank
+
+Update duckchain.json pre-funded account with the resulted id.
+
 
 ### Initialize
 Each node nead to be generated according the same genesis.json:
@@ -91,7 +97,12 @@ geth --config ./config/DuckChain_PublicNode.toml
 
 git clone https://github.com/cubedro/eth-netstats.git
 npm install
-WS=MY_SECRET npm start
+echo 'WS_SECRET=123456' > ws_secret.json
+npm start
+
+sudo cp systemd/netstats.service /etc/systemd/system
+sudo service enable netstats.service
+
 
 :warning: No specials chars in secret key like @!,;. etc....
 
@@ -118,7 +129,9 @@ URL = "DuckChain_PublicNode01:12345@192.168.0.250:3000"
 # Puppeth
 
 BootNode:
-Step 3/4 : RUN   echo 'geth --cache 512 init /genesis.json' > geth.sh && 	echo $'exec geth --networkid 3938 --cache 512 --port 30303 --nat extip:192.168.0.251 --maxpeers 512 --lightpeers=256 --lightserv=50 --ethstats \'DuckChain_BootNode01:MyVeryStrongSecret@192.168.0.251:8081\'    --miner.gastarget 0 --miner.gaslimit 0 --miner.gasprice 0' >> geth.sh
+Step 3/4 : RUN   
+echo 'geth --cache 512 init /genesis.json'
+echo 'exec geth --networkid 3938 --cache 512 --port 30303 --nat extip:192.168.0.251 --maxpeers 512 --lightpeers=256 --lightserv=50 --ethstats \'DuckChain_BootNode01:MyVeryStrongSecret@192.168.0.251:8081\'    --miner.gastarget 0 --miner.gaslimit 0 --miner.gasprice 0' >> geth.sh
 
 SealerNode:
 Step 3/4 : RUN   echo 'geth --cache 512 init /genesis.json' > geth.sh && 	echo $'exec geth --networkid 3938 --cache 512 --port 30304 --nat extip:192.168.0.251 --maxpeers 50  --ethstats \'DuckChain_SealerNode01:MyVeryStrongSecret@192.168.0.251:8081\'  --miner.etherbase 0x898bd12e8Fc14f503c246180590e90042b9B282a --mine --miner.threads 1  --miner.gastarget 7500000 --miner.gaslimit 10000000 --miner.gasprice 1000000000' >> geth.sh
