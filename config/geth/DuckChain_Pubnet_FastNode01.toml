@@ -57,7 +57,7 @@ RestrictConnectionBetweenLightClients = true
 
 [Node]
 UserIdent = "DuckChain_Pubnet_FastNode01"
-DataDir = "/home/duck/DuckChain/data/Pubnet_FastNode01"
+DataDir = "/home/duck/DuckChain/data/DuckChain_Pubnet_FastNode01"
 omitempty = ""
 IPCPath = "geth.ipc"
 HTTPPort = 8545
