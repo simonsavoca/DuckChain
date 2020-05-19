@@ -1,6 +1,6 @@
 [Eth]
-NetworkId = 9999
-SyncMode = "full"
+NetworkId = 21061982
+SyncMode = "fast"
 DiscoveryURLs = []
 NoPruning = false
 NoPrefetch = false
@@ -27,7 +27,7 @@ CacheDir = "ethash"
 CachesInMem = 2
 CachesOnDisk = 3
 CachesLockMmap = false
-DatasetDir = "/home/simon/.ethash"
+DatasetDir = "/home/duck/.ethash"
 DatasetsInMem = 1
 DatasetsOnDisk = 2
 DatasetsLockMmap = false
@@ -56,8 +56,8 @@ MinimumAcceptedPOW = 2e-01
 RestrictConnectionBetweenLightClients = true
 
 [Node]
-UserIdent = "DuckChain_PublicNode01"
-DataDir = "/home/simon/DuckChain/data/DuckChain_PublicNode01"
+UserIdent = "DuckChain_Pubnet_FastNode01"
+DataDir = "/home/duck/DuckChain/data/Pubnet_FastNode01"
 omitempty = ""
 IPCPath = "geth.ipc"
 HTTPPort = 8545
@@ -71,11 +71,11 @@ GraphQLVirtualHosts = ["localhost"]
 [Node.P2P]
 MaxPeers = 50
 NoDiscovery = false
-BootstrapNodes = ["enode://4cb93c54e4678f853fab060154f8646622b301488d8083d20e839655c8d3f820f8e2e7f866df67e6d5ef1f71167a2c1a7cc73ba1d9b39c63822ed7a693fa666f@82.64.158.44:30303"]
+BootstrapNodes = ["enode://87a5221dc8f682f7f73c14bfd0c6bde466dcce68eb94da461735f1015f17a255a4351f07f01abc608733026d8a6c0aa51b4d7cbbd0910045b140c71bb31b43da@82.64.158.44:30303"]
 BootstrapNodesV5 = []
 StaticNodes = ["enode://4cb93c54e4678f853fab060154f8646622b301488d8083d20e839655c8d3f820f8e2e7f866df67e6d5ef1f71167a2c1a7cc73ba1d9b39c63822ed7a693fa666f@82.64.158.44:30303"]
 TrustedNodes = ["enode://4cb93c54e4678f853fab060154f8646622b301488d8083d20e839655c8d3f820f8e2e7f866df67e6d5ef1f71167a2c1a7cc73ba1d9b39c63822ed7a693fa666f@82.64.158.44:30303"]
-ListenAddr = ":30305"
+ListenAddr = ":30304"
 EnableMsgEvents = false
 
 [Node.HTTPTimeouts]
@@ -84,4 +84,4 @@ WriteTimeout = 30000000000
 IdleTimeout = 120000000000
 
 [Ethstats]
-URL = "DuckChain_PublicNode01:12345@192.168.0.250:3000"
+URL = "DuckChain_Pubnet_FastNode01:12345@192.168.0.251:3000"

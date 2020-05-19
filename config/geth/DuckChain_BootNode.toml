@@ -1,6 +1,6 @@
 [Eth]
-NetworkId = 9999
-SyncMode = "full"
+NetworkId = 21061982
+SyncMode = "fast"
 DiscoveryURLs = []
 NoPruning = false
 NoPrefetch = false
@@ -57,7 +57,7 @@ RestrictConnectionBetweenLightClients = true
 
 [Node]
 UserIdent = "DuckChain_BootNode"
-DataDir = "/home/simon/DuckChain/data/DuckChain_BootNode"
+DataDir = "/home/duck/DuckChain/data/BootNode"
 omitempty = ""
 IPCPath = "geth.ipc"
 HTTPHost = "127.0.0.1"
@@ -74,8 +74,8 @@ MaxPeers = 50
 NoDiscovery = false
 BootstrapNodes = []
 BootstrapNodesV5 = []
-StaticNodes = ["enode://bb6331536153241327121bcc8222a572459c8fe4f88ea9ba3d5fc1bf790553e7494e8ea8fbffa3d1192d2b0b1d38c6dd65c340a2072a972f42b904137140d1b7@82.64.158.44:30305", "enode://b511b20819f0dc3cfdd62a5a41b0bc5f7f1521909db0465d710eeddfb63a60a2f116e6108ff750d48ae809df9b10a8eca79e7c239351b8c8ed3db2279c5cb7c3@82.64.158.44:30304?discport=0"]
-TrustedNodes = ["enode://bb6331536153241327121bcc8222a572459c8fe4f88ea9ba3d5fc1bf790553e7494e8ea8fbffa3d1192d2b0b1d38c6dd65c340a2072a972f42b904137140d1b7@82.64.158.44:30305", "enode://b511b20819f0dc3cfdd62a5a41b0bc5f7f1521909db0465d710eeddfb63a60a2f116e6108ff750d48ae809df9b10a8eca79e7c239351b8c8ed3db2279c5cb7c3@82.64.158.44:30304?discport=0"]
+StaticNodes = []
+TrustedNodes = []
 ListenAddr = ":30303"
 EnableMsgEvents = false
 
@@ -85,4 +85,4 @@ WriteTimeout = 30000000000
 IdleTimeout = 120000000000
 
 [Ethstats]
-URL = "DuckChain_BootNode:12345@192.168.0.250:3000"
+URL = "DuckChain_BootNode:12345@192.168.0.251:3000"
