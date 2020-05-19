@@ -1,0 +1,17 @@
+{
+  "name": "ENS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies":{
+    "@ensdomains/resolver":"^0.2.0",
+    "@ensdomains/ens": "^0.4.0",
+    "solc": "^0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
