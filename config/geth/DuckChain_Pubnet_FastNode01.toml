@@ -60,12 +60,12 @@ UserIdent = "DuckChain_Pubnet_FastNode01"
 DataDir = "/home/duck/DuckChain/data/DuckChain_Pubnet_FastNode01"
 omitempty = ""
 IPCPath = "geth.ipc"
-HTTPPort = 8545
+HTTPPort = 8111
 HTTPVirtualHosts = ["localhost"]
 HTTPModules = ["net", "web3", "eth"]
-WSPort = 8546
+WSPort = 8112
 WSModules = ["net", "web3", "eth"]
-GraphQLPort = 8547
+GraphQLPort = 8113
 GraphQLVirtualHosts = ["localhost"]
 
 [Node.P2P]
@@ -75,7 +75,7 @@ BootstrapNodes = []
 BootstrapNodesV5 = []
 StaticNodes = []
 TrustedNodes = []
-ListenAddr = ":30304"
+ListenAddr = ":30311"
 EnableMsgEvents = false
 
 [Node.HTTPTimeouts]

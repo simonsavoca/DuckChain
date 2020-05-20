@@ -61,12 +61,12 @@ DataDir = "/home/duck/DuckChain/data/DuckChain_HubNode"
 omitempty = ""
 IPCPath = "geth.ipc"
 HTTPHost = "127.0.0.1"
-HTTPPort = 8575
+HTTPPort = 8545
 HTTPVirtualHosts = ["localhost"]
 HTTPModules = ["net", "web3", "eth"]
-WSPort = 8576
+WSPort = 8546
 WSModules = ["net", "web3", "eth"]
-GraphQLPort = 8577
+GraphQLPort = 8547
 GraphQLVirtualHosts = ["localhost"]
 
 [Node.P2P]
@@ -76,7 +76,7 @@ BootstrapNodes = []
 BootstrapNodesV5 = []
 StaticNodes = []
 TrustedNodes = []
-ListenAddr = ":30307"
+ListenAddr = ":30304"
 EnableMsgEvents = false
 
 [Node.HTTPTimeouts]

@@ -3,35 +3,37 @@ Private Blockchain project.
 
 ## Network
 
-| Name | Sync | Cache | Port |
+| Name | Sync | Port |
 |---|---|---|---|
-| DuckChain_BootNode | Fast | 128 | 30303 |
+| DuckChain_BootNode | Fast | 30303 | 8535 8536 8537
+| DuckChain_HubNode | Fast | 30304 | 8545 8546 8547
+
 
 ### Public network(Discover)
 
-| Name | Sync | Cache | Port | RPC | WS |
+| Name | Sync | Port | RPC | WS |
 |---|---|---|---|---|---|
-| DuckChain_Public_FastNode01 | Fast | 128 | 30304 | :no_entry_sign: | :no_entry_sign:
-| DuckChain_Public_FullNode01 | Full | 128 | 30305 | :no_entry_sign: | :no_entry_sign:
-| DuckChain_Public_ArchiveNode01 | Full+NoPruning | 128 | 30306 | :no_entry_sign: | :no_entry_sign:
-| DuckChain_Public_WalletNode01 | Full+NoPruning | 128 | 30307 | :no_entry_sign: | :no_entry_sign:
-| DuckChain_Public_MinerNode01 | Fast | 128 | 30308 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_FastNode01 | Fast | 30311 | 8111 8112 8113 | :no_entry_sign:
+| DuckChain_Public_FullNode01 | Full | 30312 | 8121 8122 8123 :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_ArchiveNode01 | Full+NoPruning | 30313 | 8131 8132 8133 :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_WalletNode01 | Full+NoPruning | 30314 | 8141 8142 8143 :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_MinerNode01 | Fast | 30315 | 8151 8152 8153 :no_entry_sign: | :no_entry_sign:
 
 
 ### Private Network
 
-| Name | Sync | Cache | Port | RPC | WS |
+| Name | Sync | Port | RPC | WS |
 |---|---|---|---|---|---|
-| DuckChain_Private_FastNode01 | Fast | 128 | 30314 | :no_entry_sign: | :no_entry_sign: |
-| DuckChain_Private_FullNode01 | Full | 128 | 30315 | :no_entry_sign: | :no_entry_sign:
-| DuckChain_Private_ArchiveNode01 | Full+NoPruning | 128 | 30316 | :no_entry_sign: | :no_entry_sign:
-| DuckChain_Private_WalletNode01 | Full | 128 | 30317 | :no_entry_sign: | :no_entry_sign:
-| DuckChain_Private_MinerNode01 | Fast | 128 | 30308 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Private_FastNode01 | Fast | 30321 | 8211 8212 8213 :no_entry_sign: | :no_entry_sign: |
+| DuckChain_Private_FullNode01 | Full | 30322 | 8221 8222 8223 :no_entry_sign: | :no_entry_sign:
+| DuckChain_Private_ArchiveNode01 | Full+NoPruning | 30316 | 8231 8232 8233 :no_entry_sign: | :no_entry_sign:
+| DuckChain_Private_WalletNode01 | Full | 30323 | 8241 8242 8243 :no_entry_sign: | :no_entry_sign:
+| DuckChain_Private_MinerNode01 | Fast | 30324 | 8251 8252 8253 :no_entry_sign: | :no_entry_sign:
 
 ### Client network (another computer)
-| Name | Sync | Cache | Port | RPC | WS |
+| Name | Sync | Port | RPC | WS |
 |---|---|---|---|---|---|
-| DuckChain_MinerNode01 | Light | 512 | 30303 | :heavy_check_mark: (8545) | :heavy_check_mark: (8546) |
+| DuckChain_MinerNode01 | Light | 30303 | :heavy_check_mark: (8545) | :heavy_check_mark: (8546) |
 
 
 ## Go-Ethereum nodes

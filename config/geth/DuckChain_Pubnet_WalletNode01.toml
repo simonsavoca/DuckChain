@@ -2,7 +2,7 @@
 NetworkId = 21061982
 SyncMode = "full"
 DiscoveryURLs = []
-NoPruning = false
+NoPruning = true
 NoPrefetch = false
 LightPeers = 100
 UltraLightFraction = 75
@@ -56,16 +56,16 @@ MinimumAcceptedPOW = 2e-01
 RestrictConnectionBetweenLightClients = true
 
 [Node]
-UserIdent = "DuckChain_Pubnet_FullNode01"
-DataDir = "/home/duck/DuckChain/data/DuckChain_Pubnet_FullNode01"
+UserIdent = "DuckChain_Pubnet_WalletNode01"
+DataDir = "/home/duck/DuckChain/data/DuckChain_Pubnet_WalletNode01"
 omitempty = ""
 IPCPath = "geth.ipc"
-HTTPPort = 8121
+HTTPPort = 8141
 HTTPVirtualHosts = ["localhost"]
 HTTPModules = ["net", "web3", "eth"]
-WSPort = 8122
+WSPort = 8142
 WSModules = ["net", "web3", "eth"]
-GraphQLPort = 8123
+GraphQLPort = 8143
 GraphQLVirtualHosts = ["localhost"]
 
 [Node.P2P]
@@ -75,7 +75,7 @@ BootstrapNodes = []
 BootstrapNodesV5 = []
 StaticNodes = []
 TrustedNodes = []
-ListenAddr = ":30312"
+ListenAddr = ":30314"
 EnableMsgEvents = false
 
 [Node.HTTPTimeouts]
@@ -84,4 +84,4 @@ WriteTimeout = 30000000000
 IdleTimeout = 120000000000
 
 [Ethstats]
-URL = "DuckChain_Pubnet_FullNode01:12345@192.168.0.251:3000"
+URL = "DuckChain_Pubnet_WalletNode01:12345@192.168.0.251:3000"
