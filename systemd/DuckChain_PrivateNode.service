@@ -3,7 +3,7 @@ Description=DuckChain - PrivateNode01
 After=syslog.target network.target
 
 [Service]
-ExecStart=/usr/bin/geth --config /home/simon/DuckChain/config/geth/DuckChain_PrivateNode01.toml
+ExecStart=/usr/bin/geth --config /home/duck/DuckChain/config/geth/DuckChain_PrivateNode01.toml
 Restart=on-failure
 KillSignal=SIGINT
 
@@ -12,9 +12,9 @@ SyslogIdentifier=geth
 StandardOutput=syslog
 
 # non-root user to run as
-WorkingDirectory=/home/simon/
-User=simon
-Group=simon
+WorkingDirectory=/home/duck/
+User=duck
+Group=duck
 
 [Install]
 WantedBy=multi-user.target
