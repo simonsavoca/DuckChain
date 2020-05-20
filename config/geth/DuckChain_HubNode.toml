@@ -1,0 +1,88 @@
+[Eth]
+NetworkId = 21061982
+SyncMode = "fast"
+DiscoveryURLs = []
+NoPruning = false
+NoPrefetch = false
+LightPeers = 100
+UltraLightFraction = 75
+DatabaseCache = 64
+DatabaseFreezer = ""
+TrieCleanCache = 19
+TrieDirtyCache = 32
+TrieTimeout = 3600000000000
+EnablePreimageRecording = false
+EWASMInterpreter = ""
+EVMInterpreter = ""
+
+[Eth.Miner]
+GasFloor = 8000000
+GasCeil = 8000000
+GasPrice = 1000000000
+Recommit = 3000000000
+Noverify = false
+
+[Eth.Ethash]
+CacheDir = "ethash"
+CachesInMem = 2
+CachesOnDisk = 3
+CachesLockMmap = false
+DatasetDir = "/home/duck/.ethash"
+DatasetsInMem = 1
+DatasetsOnDisk = 2
+DatasetsLockMmap = false
+PowMode = 0
+
+[Eth.TxPool]
+Locals = []
+NoLocals = false
+Journal = "transactions.rlp"
+Rejournal = 3600000000000
+PriceLimit = 1
+PriceBump = 10
+AccountSlots = 16
+GlobalSlots = 4096
+AccountQueue = 64
+GlobalQueue = 1024
+Lifetime = 10800000000000
+
+[Eth.GPO]
+Blocks = 20
+Percentile = 60
+
+[Shh]
+MaxMessageSize = 1048576
+MinimumAcceptedPOW = 2e-01
+RestrictConnectionBetweenLightClients = true
+
+[Node]
+UserIdent = "DuckChain_HubNode"
+DataDir = "/home/duck/DuckChain/data/DuckChain_HubNode"
+omitempty = ""
+IPCPath = "geth.ipc"
+HTTPHost = "127.0.0.1"
+HTTPPort = 8545
+HTTPVirtualHosts = ["localhost"]
+HTTPModules = ["net", "web3", "eth"]
+WSPort = 8546
+WSModules = ["net", "web3", "eth"]
+GraphQLPort = 8547
+GraphQLVirtualHosts = ["localhost"]
+
+[Node.P2P]
+MaxPeers = 50
+NoDiscovery = true
+BootstrapNodes = []
+BootstrapNodesV5 = []
+StaticNodes = ["enode://87a5221dc8f682f7f73c14bfd0c6bde466dcce68eb94da461735f1015f17a255a4351f07f01abc608733026d8a6c0aa51b4d7cbbd0910045b140c71bb31b43da@82.64.158.44:30303"]
+TrustedNodes = ["enode://87a5221dc8f682f7f73c14bfd0c6bde466dcce68eb94da461735f1015f17a255a4351f07f01abc608733026d8a6c0aa51b4d7cbbd0910045b140c71bb31b43da@82.64.158.44:30303"]
+ListenAddr = ":30307"
+EnableMsgEvents = false
+
+[Node.HTTPTimeouts]
+ReadTimeout = 30000000000
+WriteTimeout = 30000000000
+IdleTimeout = 120000000000
+
+[Ethstats]
+URL = "DuckChain_HubNode:12345@192.168.0.251:3000"
