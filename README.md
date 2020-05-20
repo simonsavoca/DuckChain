@@ -1,23 +1,38 @@
 # DuckChain
 Private Blockchain project.
 
-## Services
-- Boot node: nodes used to help client to connect on the blockchain
- - Discovery: Enabled
- - BootstarpNodes: None
- - Static-nodes/Trusted: Private nodes enode addresses
+## Network
+
+| Name | Sync | Cache | Port |
+|---|---|---|---|
+| DuckChain_BootNode | Fast | 128 | 30303 |
+
+### Public network(Discover)
+
+| Name | Sync | Cache | Port | RPC | WS |
+|---|---|---|---|---|---|
+| DuckChain_Public_FastNode01 | Fast | 128 | 30304 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_FullNode01 | Full | 128 | 30305 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_ArchiveNode01 | Full+NoPruning | 128 | 30306 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_WalletNode01 | Full+NoPruning | 128 | 30307 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Public_MinerNode01 | Fast | 128 | 30308 | :no_entry_sign: | :no_entry_sign:
 
 
-- Private nodes: Node only visible by the boot node
-  - Discovery: Disabled
-  - BootstarpNodes: None
-  - Static-nodes/Trusted: Bootnode enode address
+### Private Network
 
+| Name | Sync | Cache | Port | RPC | WS |
+|---|---|---|---|---|---|
+| DuckChain_Private_FastNode01 | Fast | 128 | 30314 | :no_entry_sign: | :no_entry_sign: |
+| DuckChain_Private_FullNode01 | Full | 128 | 30315 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Private_ArchiveNode01 | Full+NoPruning | 128 | 30316 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Private_WalletNode01 | Full | 128 | 30317 | :no_entry_sign: | :no_entry_sign:
+| DuckChain_Private_MinerNode01 | Fast | 128 | 30308 | :no_entry_sign: | :no_entry_sign:
 
-- Public nodes: that can be discovered by every other node on the network
- - Discovery: Enabled
- - BootstarpNodes: Bootnode enode address
- - Static-nodes/Trusted: private nodes enode addresses
+### Client network (another computer)
+| Name | Sync | Cache | Port | RPC | WS |
+|---|---|---|---|---|---|
+| DuckChain_MinerNode01 | Light | 512 | 30303 | :heavy_check_mark: (8545) | :heavy_check_mark: (8546) |
+
 
 ## Go-Ethereum nodes
 ### Installation
@@ -27,20 +42,12 @@ sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
 sudo apt-get install ethereum
 ```
-
-
-
-
-
-
-
 ### Special accounts
 
 geth --datadir /.../.....  account new
 
 - One for Faucet service and give free ethers
 - One personnal, my precious !
-- One for Central Bank
 
 Update duckchain.json pre-funded account with the resulted id.
 
@@ -48,7 +55,7 @@ Update duckchain.json pre-funded account with the resulted id.
 ### Initialize
 Each node nead to be generated according the same genesis.json:
 ```
-geth --datadir ./data/DuckChain_BootNode/ init ./config/genesis.json
+geth --datadir ./data/DuckChain_BootNode/ init ./config/duckchain.json
 ```
 Change the `--datadir` value for each node.
 
@@ -97,7 +104,7 @@ geth --config ./config/DuckChain_PublicNode.toml
 
 git clone https://github.com/cubedro/eth-netstats.git
 npm install
-echo 'WS_SECRET=123456' > ws_secret.json
+["123456"] > ws_secret.json
 npm start
 
 sudo cp systemd/netstats.service /etc/systemd/system
