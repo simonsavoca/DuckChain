@@ -73,8 +73,8 @@ MaxPeers = 50
 NoDiscovery = true
 BootstrapNodes = []
 BootstrapNodesV5 = []
-StaticNodes = ["enode://4cb93c54e4678f853fab060154f8646622b301488d8083d20e839655c8d3f820f8e2e7f866df67e6d5ef1f71167a2c1a7cc73ba1d9b39c63822ed7a693fa666f@82.64.158.44:30303"]
-TrustedNodes = ["enode://4cb93c54e4678f853fab060154f8646622b301488d8083d20e839655c8d3f820f8e2e7f866df67e6d5ef1f71167a2c1a7cc73ba1d9b39c63822ed7a693fa666f@82.64.158.44:30303"]
+StaticNodes = []
+TrustedNodes = []
 ListenAddr = ":30304"
 EnableMsgEvents = false
 
@@ -84,4 +84,4 @@ WriteTimeout = 30000000000
 IdleTimeout = 120000000000
 
 [Ethstats]
-URL = "DuckChain_PrivateNode01:12345@192.168.0.250:3000"
+URL = "DuckChain_PrivateNode01:12345@192.168.0.251:3000"

@@ -84,4 +84,4 @@ WriteTimeout = 30000000000
 IdleTimeout = 120000000000
 
 [Ethstats]
-URL = "DuckChain_Client:12345@192.168.0.250:3000"
+URL = "DuckChain_Client:12345@192.168.0.251:3000"

@@ -61,12 +61,12 @@ DataDir = "/home/duck/DuckChain/data/DuckChain_HubNode"
 omitempty = ""
 IPCPath = "geth.ipc"
 HTTPHost = "127.0.0.1"
-HTTPPort = 8545
+HTTPPort = 8575
 HTTPVirtualHosts = ["localhost"]
 HTTPModules = ["net", "web3", "eth"]
-WSPort = 8546
+WSPort = 8576
 WSModules = ["net", "web3", "eth"]
-GraphQLPort = 8547
+GraphQLPort = 8577
 GraphQLVirtualHosts = ["localhost"]
 
 [Node.P2P]
@@ -74,8 +74,8 @@ MaxPeers = 50
 NoDiscovery = true
 BootstrapNodes = []
 BootstrapNodesV5 = []
-StaticNodes = ["enode://87a5221dc8f682f7f73c14bfd0c6bde466dcce68eb94da461735f1015f17a255a4351f07f01abc608733026d8a6c0aa51b4d7cbbd0910045b140c71bb31b43da@82.64.158.44:30303"]
-TrustedNodes = ["enode://87a5221dc8f682f7f73c14bfd0c6bde466dcce68eb94da461735f1015f17a255a4351f07f01abc608733026d8a6c0aa51b4d7cbbd0910045b140c71bb31b43da@82.64.158.44:30303"]
+StaticNodes = []
+TrustedNodes = []
 ListenAddr = ":30307"
 EnableMsgEvents = false
 
