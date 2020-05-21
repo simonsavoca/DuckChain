@@ -1,5 +1,5 @@
 [Eth]
-NetworkId = 9999
+NetworkId = 21061982
 SyncMode = "fast"
 DiscoveryURLs = []
 NoPruning = false
@@ -71,7 +71,7 @@ GraphQLVirtualHosts = ["localhost"]
 [Node.P2P]
 MaxPeers = 50
 NoDiscovery = false
-BootstrapNodes = ["enode://4cb93c54e4678f853fab060154f8646622b301488d8083d20e839655c8d3f820f8e2e7f866df67e6d5ef1f71167a2c1a7cc73ba1d9b39c63822ed7a693fa666f@82.64.158.44:30303"]
+BootstrapNodes = ["enode://46220f080e177794305acbae8f4b58394d092baf859698aa35ad1d4517c42fa969104f0395aa2d15d206cd5d832bcca374f938724ccbffdbdaea77e33356a70c@82.64.158.44:30303"]
 BootstrapNodesV5 = []
 StaticNodes = []
 TrustedNodes = []
